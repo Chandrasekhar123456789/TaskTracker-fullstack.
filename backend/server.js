@@ -8,7 +8,17 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      'https://tasktracker-fullstack-1.onrender.com', // your frontend on Render
+      'http://localhost:5173', // for local testing
+    ],
+    methods: ['GET', 'POST', 'PATCH'],
+    allowedHeaders: ['Content-Type'],
+  })
+);
+
 app.use(express.json());
 
 app.use('/tasks', tasksRouter);
