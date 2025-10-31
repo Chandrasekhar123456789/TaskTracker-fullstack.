@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-  "postinstall": "chmod +x ./node_modules/.bin/vite",
-  "dev": "vite",
-  "build": "npm run postinstall && vite build",
-  "preview": "vite preview --host 0.0.0.0 --port $PORT"
+    "postinstall": "chmod +x ./node_modules/.bin/vite",
+    "dev": "vite",
+    "build": "npm run postinstall && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port $PORT"
   },
-
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
     "vite": "^5.3.1"
   }
 }
-
