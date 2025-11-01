@@ -25,4 +25,6 @@ It is packaged as a single folder for easy running, GitHub push, and deployment 
   2. **Static Site** for frontend — build command `npm run build`, publish `dist` (Vite output). Or host frontend as a web service and proxy to backend.
 
 See full instructions in docs/render-deploy.md (optional).
+Published Link:
+https://tasktracker-fullstack-1.onrender.com
 
